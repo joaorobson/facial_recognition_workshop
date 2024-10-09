@@ -13,7 +13,6 @@ git clone https://github.com/joaorobson/facial_recognition_workshop
 ```
 cd facial_recognition_workshop
 pip install -r requirements.txt
-
 ```
 
 ## Etapas do reconhecimento facial
@@ -34,6 +33,24 @@ Para executar a API localmente, execute:
 
 ```
 fastapi dev src/api/main.py
+```
+
+## Testar API
+
+Para testar a API, é possível utilizar alguma ferramenta específica (ex.: PostMan) ou executar um código Python de testes.
+
+No diretório `src/test_api`, há alguns _scripts_ ara testar a API executada localmente.
+
+Para chamar os _endpoints_ básicos, execute:
+
+```
+python src/test_api/call_basic_endpoints.py
+```
+
+Para testar o _endpoint_ de detecção facial, execute:
+
+```
+python src/test_api/detect_face_using_api.py
 ```
 
 ## Front-end
