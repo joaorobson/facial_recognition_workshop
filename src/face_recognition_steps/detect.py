@@ -22,4 +22,4 @@ for face in faces:
     cropped_face = image[y:y+h, x:x+w]
 
 cv2.imwrite('images/detected_face.jpg', image)
-cv2.imwrite('images/cropped_face_aligned.jpg', cropped_face)
+cv2.imwrite('images/cropped_face.jpg', cropped_face)
