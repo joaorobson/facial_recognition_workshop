@@ -1,5 +1,11 @@
 # Oficina de reconhecimento facial
 
+## Instalação do Python no Windows
+
+Baixe a [versão 3.9](
+https://www.python.org/ftp/python/3.9.12/python-3.9.12-amd64.exe)
+
+
 ## Configuração inicial
 
 * Clone o repositório:
@@ -12,7 +18,9 @@ git clone https://github.com/joaorobson/facial_recognition_workshop
 
 ```
 cd facial_recognition_workshop
-pip install -r requirements.txt
+py -3.9 -m venv env
+env\Scripts\activate.bat
+py -3.9 -m pip install -r requirements.txt
 ```
 
 ## Etapas do reconhecimento facial
@@ -23,7 +31,7 @@ Cada etapa está implementada em um _script_ independente em `src/face_recogniti
 Para executá-los, siga o exemplo abaixo:
 
 ```
-python src/face_recognition_steps/detect.py
+py -3.9 src\face_recognition_steps\detect.py
 ```
 
 
