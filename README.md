@@ -29,6 +29,12 @@ python src/face_recognition_steps/detect.py
 
 ## API
 
+**Antes de executar a API, crie o banco de dados com os _embeddings_**:
+```
+python src/face_recognition_steps/ceate_vector_db.py
+```
+
+
 Para executar a API localmente, execute:
 
 ```
@@ -39,7 +45,7 @@ fastapi dev src/api/main.py
 
 Para testar a API, é possível utilizar alguma ferramenta específica (ex.: PostMan) ou executar um código Python de testes.
 
-No diretório `src/test_api`, há alguns _scripts_ ara testar a API executada localmente.
+No diretório `src/test_api`, há alguns _scripts_ para testar a API executada localmente.
 
 Para chamar os _endpoints_ básicos, execute:
 
