@@ -39,7 +39,7 @@ py -3.9 src\face_recognition_steps\detect.py
 
 **Antes de executar a API, crie o banco de dados com os _embeddings_**:
 ```
-python src/face_recognition_steps/ceate_vector_db.py
+py -3.9 src\face_recognition_steps\create_vector_db.py
 ```
 
 
@@ -58,13 +58,13 @@ No diretório `src/test_api`, há alguns _scripts_ para testar a API executada l
 Para chamar os _endpoints_ básicos, execute:
 
 ```
-python src/test_api/call_basic_endpoints.py
+py -3.9 src/test_api/call_basic_endpoints.py
 ```
 
 Para testar o _endpoint_ de detecção facial, execute:
 
 ```
-python src/test_api/detect_face_using_api.py
+py -3.9 src/test_api/detect_face_using_api.py
 ```
 
 ## Front-end
